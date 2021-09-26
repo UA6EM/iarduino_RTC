@@ -66,7 +66,7 @@ void		iarduino_RTC::blinktime(uint8_t RTC_i){RTC_uint_BLINK=RTC_i;}
 void		iarduino_RTC::RTC_func_START(){
 uint8_t		RTC_var_I=0, RTC_var_J=0;
 			if(RTC_array_STR[RTC_uint_MODULE][0]){
-				for(int i=1; i<RTC_array_STR[RTC_uint_MODULE][0]*2; i+=2){
+				for(uint16_t i=1; i<RTC_array_STR[RTC_uint_MODULE][0]*2; i+=2){
 					RTC_var_J=0; RTC_var_I=RTC_func_READ_REG(RTC_array_STR[RTC_uint_MODULE][i]);
 					for(int j=1; j<=15; j+=2){if(RTC_array_STR[RTC_uint_MODULE][i+1] & _BV(j)){if(bitRead(RTC_var_I, j/2)!=bitRead(RTC_array_STR[RTC_uint_MODULE][i+1], j-1)){bitWrite(RTC_var_I, j/2, bitRead(RTC_array_STR[RTC_uint_MODULE][i+1], j-1)); RTC_var_J=1;}}}
 					if(RTC_var_J){RTC_func_WRITE_REG(RTC_array_STR[RTC_uint_MODULE][i], RTC_var_I);}
