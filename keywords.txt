@@ -6,7 +6,7 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-RTC	KEYWORD1 RTC
+iarduino_RTC	KEYWORD1 iarduino_RTC
 
 #######################################
 # Methods and Functions (KEYWORD2)
