@@ -6,7 +6,7 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-RTC	KEYWORD1
+RTC	KEYWORD1 RTC
 
 #######################################
 # Methods and Functions (KEYWORD2)
