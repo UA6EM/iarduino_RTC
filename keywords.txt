@@ -17,6 +17,7 @@ settime KEYWORD2
 gettime KEYWORD2
 blinktime KEYWORD2
 period  KEYWORD2
+iarduino_RTC  KEYWORD2
 
 #######################################
 # Instances (KEYWORD2)
