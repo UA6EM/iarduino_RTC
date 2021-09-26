@@ -13,15 +13,10 @@ RTC	KEYWORD1 RTC
 #######################################
 
 begin	KEYWORD2
-check	KEYWORD2
-addCATPtt	KEYWORD2
-addCATAB	KEYWORD2
-addCATFSet	KEYWORD2
-addCATMSet	KEYWORD2
-addCATGetFreq	KEYWORD2
-addCATGetMode	KEYWORD2
-addCATSMeter	KEYWORD2
-addCATTXStatus	KEYWORD2
+settime KEYWORD2
+gettime KEYWORD2
+blinktime KEYWORD2
+period  KEYWORD2
 
 #######################################
 # Instances (KEYWORD2)
